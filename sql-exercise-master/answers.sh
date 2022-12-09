@@ -23,7 +23,9 @@
 	"Age"	INTEGER,
 	"Gender"	TEXT,
 	"Points"	INTEGER,
-	"Graduation"	TEXT);
+	"Graduation"	TEXT,
+     PRIMARY KEY("ID" AUTOINCREMENT)
+     );
 	
 	INSERT INTO graduates (ID, Name, Age, Gender, Points)
       SELECT * FROM students
@@ -32,4 +34,26 @@
     SET Graduation='08/09/2018'
     WHERE Name='Layal';
 12. DELETE FROM students WHERE Name='Layal';
-13. Commit
+13. Commit 
+
+14.CREATE TABLE "Employee1" (
+	"ID"	INTEGER NOT NULL,
+	"EmployeeName"	TEXT NOT NULL UNIQUE,
+	"CompanyoftheEemployee"	TEXT,
+	"TheCcompanyDate"	TEXT,
+	PRIMARY KEY("ID" AUTOINCREMENT)
+     );
+
+   SELECT * FROM Employee1;
+INSERT INTO Employee1 VALUES (1, 'Marc', 'Google', '1998');
+INSERT INTO Employee1 VALUES (2, 'Maria', 'Google', '1998');
+INSERT INTO Employee1 VALUES (3, 'ALaa', 'Facebook', '2004');
+INSERT INTO Employee1 VALUES (4, 'Hala', 'Snapchat', '2011');
+
+
+15. SELECT * FROM Employee1
+    WHERE TheCcompanyDate<'2000';
+16. SELECT * FROM employees
+    WHERE Role='Graphic Designer';
+17. Commit
+
