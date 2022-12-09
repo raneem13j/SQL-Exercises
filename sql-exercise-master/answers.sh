@@ -57,3 +57,22 @@ INSERT INTO Employee1 VALUES (4, 'Hala', 'Snapchat', '2011');
     WHERE Role='Graphic Designer';
 17. Commit
 
+18. SELECT Name,MAX(Points) 
+    FROM students;
+
+19. SELECT AVG(Points)
+    FROM students;
+
+20. SELECT COUNT(Name)
+    FROM students
+    WHERE Points='500';
+
+21.SELECT * FROM students
+   WHERE Name LIKE '%s%';
+
+22.SELECT (Name) FROM students
+   ORDER BY Points DESC;
+23. Commit
+
+
+
